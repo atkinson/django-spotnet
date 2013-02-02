@@ -28,7 +28,7 @@ with that last setting being the address
 to a NNTP server, it's the only required setting. 
 And set up the urls to the included views
 
-    (r'^spotnet/', include('spotnet.urls')),
+    (r'^spotnet/', include('spotnet.urls', namespace='spotnet')),
 
 When you're ready, sync and update your database.
 

@@ -60,9 +60,9 @@
 <div id="download_buttons">
 {% if download.has_default %}
 {% if download.has_others %}
-  <a href="{% url spotnet:download post.id %}" title="">{% trans "Download" %} &#9660;</a>
+  <a href="{% url 'spotnet:download' post.id %}" title="">{% trans "Download" %} &#9660;</a>
 {% else %}
-  <a href="{% url spotnet:download post.id %}" title="">{% trans "Download" %}</a>
+  <a href="{% url 'spotnet:download' post.id %}" title="">{% trans "Download" %}</a>
 {% endif %}
 {% endif %}
 {% if download.has_others %}
